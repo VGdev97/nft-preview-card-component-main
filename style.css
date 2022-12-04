@@ -1,0 +1,116 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue1 : hsl(217, 54%, 11%);
+    --Very-dark-blue2 : hsl(216, 50%, 16%);
+    --Very-dark-blue3 : hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue1);
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+.nft-card{
+    max-width: 330px;
+    border-radius: 10px;
+    background-color: var(--Very-dark-blue2);
+    box-shadow: rgba(0, 0, 0, 0.4) 15px 15px 10px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.nft-content{
+    padding: 15px;
+}
+
+.nft-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nft-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nft-text h1{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.nft-text p{
+    color: var(--Soft-blue);
+    letter-spacing:0.6px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.nft-text-price{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+
+.price img{
+    margin-bottom: -4px;
+    margin-right: 7px;
+    width: 12px;
+    height: 20px;
+}
+
+.price p{
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.days img{
+    margin-bottom: -3px;
+    margin-right: 7px;
+}
+
+hr.line{
+    width: 100%;
+    border: 0.5px solid var(--Soft-blue);
+    border-width: 0.01em;
+}
+
+.person{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+
+.person img{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border: 1.5px solid #fff;
+    border-radius:50%;
+}
+
+span.name{
+    color: #fff;
+}
